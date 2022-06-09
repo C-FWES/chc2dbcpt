@@ -11,29 +11,26 @@ ul {
 }
 .nav-item:not(#web-title) {
   padding-left: 2em;
-  padding-right: 1em;;
-}
-#web-title {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-right: 1em;
 }
 .nav-link {
   text-decoration: none;
   color: white;
 }
-#navbar-align-right {
-  margin-top: 0.18em;
-  font-size: 1.5em;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  float: right;
+.nav-link:hover {
+  color: #8E908F;
 }
-#navbar-align-left {
-  font-size: 1.8em;
+#navbar-align-right {
+  margin-top: 0.6em;
+  font-size: 1.5em;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  float: right;
 }
 #navbar-align-left, #navbar-align-right {
   display: inline-block;
 }
 #nav-container {
-  background-color: rgb(34, 34, 34);
+  background-color: black;
   padding-top: 0.5%;
   padding-bottom: 0.7%;
   padding-left: 1%;
