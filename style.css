@@ -1,5 +1,5 @@
 .headers {
-  font-family: Palatino, URW Palladio L, serif;
+  font-family: sans-serif;
 }
 ul {
   list-style-type: none;
@@ -9,17 +9,18 @@ ul {
 .nav-item {
   display: inline;
 }
+.nav-item:not(#web-title) {
+  padding-left: 2em;
+}
 .nav-link {
-  font-family: Palatino, URW Palladio L, serif;
+  font-family: sans-serif;
   text-decoration: none;
   color: black;
   font-size: 2em;
-  padding-left: 2em;
 }
-#nav-container {
+#navbar-align-right {
   float: right;
-  margin-top: 1.8%;
 }
-.headers, #nav-container {
+#navbar-align-left, #navbar-align-right {
   display: inline-block;
 }
