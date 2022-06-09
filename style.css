@@ -1,3 +1,6 @@
+html, body {
+  height: 100%;
+}
 .headers {
   font-family: sans-serif;
 }
@@ -18,15 +21,16 @@ ul {
   color: white;
 }
 .nav-link:hover {
-  color: #8E908F;
+  color: #8e908f;
 }
 #navbar-align-right {
-  margin-top: 0.6em;
-  font-size: 1.5em;
-  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  margin-top: 1.1em;
+  font-size: 1.1em;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
   float: right;
 }
-#navbar-align-left, #navbar-align-right {
+#navbar-align-left,
+#navbar-align-right {
   display: inline-block;
 }
 #nav-container {
@@ -34,5 +38,11 @@ ul {
   padding-top: 0.5%;
   padding-bottom: 0.7%;
   padding-left: 1%;
-  padding-right: 1%;
+  padding-right: 2%;
+}
+#home-top-half {
+  height: 60%;
+  margin-top: 0.5%;
+  background: url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/a5037b.jpg?v=1654817959179");
+  background-size: cover;
 }
