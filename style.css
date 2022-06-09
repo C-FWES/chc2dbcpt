@@ -11,16 +11,31 @@ ul {
 }
 .nav-item:not(#web-title) {
   padding-left: 2em;
+  padding-right: 1em;;
+}
+#web-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .nav-link {
-  font-family: sans-serif;
   text-decoration: none;
-  color: black;
-  font-size: 2em;
+  color: white;
 }
 #navbar-align-right {
+  margin-top: 0.18em;
+  font-size: 1.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   float: right;
+}
+#navbar-align-left {
+  font-size: 1.8em;
 }
 #navbar-align-left, #navbar-align-right {
   display: inline-block;
+}
+#nav-container {
+  background-color: rgb(34, 34, 34);
+  padding-top: 0.5%;
+  padding-bottom: 0.7%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
