@@ -85,3 +85,31 @@ ul {
 #visit-exhibit-button:hover {
   background-color: rgba(97, 97, 97, 0.8);
 }
+#home-bottom-half {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 0.5%;
+}
+#topic-1 {
+  width: 24.65%;
+  height: 60%;
+}
+#topic-2 {
+  width: 24.65%;
+  height: 60%;
+}
+#topic-3 {
+  width: 24.65%;
+  height: 60%;
+}
+#topic-4 {
+  width: 24.65%;
+  height: 60%;
+}
+#topic-1, #topic-2, #topic-3, #topic-4 {
+  display: inline-block;
+}
+.preview {
+  border: 0.1em solid gray;
+}
