@@ -52,6 +52,7 @@
 
     <div id="home-top-half">
       <div id="main-message-container">
+        <h1 class="headers">THE MAKING OF A NATION</h1>
       </div>
     </div>
     <script>
@@ -68,7 +69,7 @@
           index= -1;
         }
         $top.animate({ opacity: 1 }, 500, function () {
-          $top.css("background-image", "url(" + images[++index] + ")");
+          $top.css("background-image","linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) )," + "url(" + images[++index] + ")");
           $top.css("background-size", "cover");
           $top.animate({ opacity: 1 }, 500, function () {});
         });

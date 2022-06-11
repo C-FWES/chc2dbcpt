@@ -3,8 +3,10 @@ html, body {
 }
 .headers {
   text-align: center;
-  font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
-  font-weight: normal;
+  font-family:Futura, Trebuchet MS, Arial, sans-serif;
+  font-size:4em;
+  font-weight: bold;
+  color: white;
 }
 #main-message-container {
 }
@@ -50,6 +52,10 @@ ul {
 #home-top-half {
   height: 60%;
   margin-top: 0.5%;
-  background: url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/a5037b.jpg?v=1654817959179");
+  background-color: black;
   background-size: cover;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/a5037b.jpg?v=1654817959179");
+}
+#main-message-container {
+  overflow: hidden;
 }
