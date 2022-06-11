@@ -52,14 +52,6 @@
 
     <div id="home-top-half"></div>
     <script>
-      let bgChanged = false;
-      function executeBg() {
-        if (!bgChanged) {
-          bgChanged = true;
-          document.getElementById("home-top-half").style.backgroundImage =
-            "url('https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/a5037b.jpg?v=1654817959179')";
-        }
-      }
       var index = 0;
       function cycle() {
         const images = [
@@ -70,8 +62,7 @@
         ];
         $top = $("#home-top-half");
         if (index == images.length - 1) {
-          executeBg();
-          return;
+          index= -1;
         }
         $top.animate({ opacity: 1 }, 500, function () {
           $top.css("background-image", "url(" + images[++index] + ")");
