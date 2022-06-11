@@ -2,7 +2,11 @@ html, body {
   height: 100%;
 }
 .headers {
-  font-family: sans-serif;
+  text-align: center;
+  font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  font-weight: normal;
+}
+#main-message-container {
 }
 ul {
   list-style-type: none;
@@ -34,6 +38,9 @@ ul {
   display: inline-block;
 }
 #nav-container {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   background-color: black;
   padding-top: 0.5%;
   padding-bottom: 0.7%;
