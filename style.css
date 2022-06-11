@@ -16,6 +16,10 @@ html, body {
   font-size: 1.5em;
   margin-top: -1.5%;
 }
+.topic-headers {
+  font-family:Futura, Trebuchet MS, Arial, sans-serif;
+  color: white;
+}
 #main-message-container {
   vertical-align: middle;
 }
@@ -94,22 +98,47 @@ ul {
 #topic-1 {
   width: 24.65%;
   height: 60%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/image.jpg");
+  background-size: cover;
+}
+#topic-1:hover {
+  background-size: cover;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/image.jpg");
 }
 #topic-2 {
   width: 24.65%;
   height: 60%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/trains.jpg?v=1654969613938");
+  background-size: cover;
+}
+#topic-2:hover {
+  background-size: cover;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/trains.jpg?v=1654969613938");
 }
 #topic-3 {
   width: 24.65%;
   height: 60%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/Avro_Arrow_rollout.jpg?v=1654969768427");
+  background-size: cover;
+}
+#topic-3:hover {
+  background-size: cover;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/Avro_Arrow_rollout.jpg?v=1654969768427");
 }
 #topic-4 {
   width: 24.65%;
   height: 60%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/CrisisInset1.jpg?v=1654969942347");
+  background-size: cover;
+}
+#topic-4:hover {
+  background-size: cover;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/CrisisInset1.jpg?v=1654969942347");
 }
 #topic-1, #topic-2, #topic-3, #topic-4 {
   display: inline-block;
 }
 .preview {
-  border: 0.1em solid gray;
+  /* border: 0.1em solid gray; */
+  overflow: hidden;
 }
