@@ -2,13 +2,22 @@ html, body {
   height: 100%;
 }
 .headers {
-  text-align: center;
+  margin-left: 2.8%;
   font-family:Futura, Trebuchet MS, Arial, sans-serif;
   font-size:4em;
   font-weight: bold;
   color: white;
 }
+.sub-headers {
+  margin-left: 2.8%;
+  font-family:Futura, Trebuchet MS, Arial, sans-serif;
+  color: white;
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-top: -1.5%;
+}
 #main-message-container {
+  vertical-align: middle;
 }
 ul {
   list-style-type: none;
@@ -50,7 +59,7 @@ ul {
   padding-right: 2%;
 }
 #home-top-half {
-  height: 60%;
+  height: 70%;
   margin-top: 0.5%;
   background-color: black;
   background-size: cover;
@@ -58,4 +67,49 @@ ul {
 }
 #main-message-container {
   overflow: hidden;
+}
+#visit-exhibit-button {
+  margin-top: 0.5%;
+  margin-left: 2.8%;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 1.1em;
+  color: white;
+  background-color: transparent;
+  padding-top: 0.8%;
+  padding-bottom: 0.8%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 0%;
+  border: 0.1em solid white;
+}
+#visit-exhibit-button:hover {
+  background-color: rgba(97, 97, 97, 0.8);
+}
+#home-bottom-half {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 0.5%;
+}
+#topic-1 {
+  width: 24.65%;
+  height: 60%;
+}
+#topic-2 {
+  width: 24.65%;
+  height: 60%;
+}
+#topic-3 {
+  width: 24.65%;
+  height: 60%;
+}
+#topic-4 {
+  width: 24.65%;
+  height: 60%;
+}
+#topic-1, #topic-2, #topic-3, #topic-4 {
+  display: inline-block;
+}
+.preview {
+  border: 0.1em solid gray;
 }
