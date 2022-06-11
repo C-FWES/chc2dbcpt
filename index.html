@@ -7,10 +7,22 @@
       rel="icon"
       href="https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/faviconV2.png?v=1654809764955"
     />
-    <link rel="prefetch" href="https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/a5037b.jpg?v=1654817959179" />
-    <link rel="prefetch" href="https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/GMT5POQU7BB4ZMUHAGCVKAJ2UI.JPG?v=1654818985863" />
-    <link rel="prefetch" href="https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/Tashme-shacks-NNM-1994-69-4-27--1900x1000.webp?v=1654887284457" />
-    <link rel="prefetch" href="https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/maxresdefault.jpg?v=1654887392324" />
+    <link
+      rel="prefetch"
+      href="https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/a5037b.jpg?v=1654817959179"
+    />
+    <link
+      rel="prefetch"
+      href="https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/GMT5POQU7BB4ZMUHAGCVKAJ2UI.JPG?v=1654818985863"
+    />
+    <link
+      rel="prefetch"
+      href="https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/Tashme-shacks-NNM-1994-69-4-27--1900x1000.webp?v=1654887284457"
+    />
+    <link
+      rel="prefetch"
+      href="https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/maxresdefault.jpg?v=1654887392324"
+    />
     <script src="/script.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
@@ -40,25 +52,39 @@
 
     <div id="home-top-half"></div>
     <script>
-      var images = [
-        "https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/a5037b.jpg?v=1654817959179",
-        "https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/GMT5POQU7BB4ZMUHAGCVKAJ2UI.JPG?v=1654818985863",
-        "https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/Tashme-shacks-NNM-1994-69-4-27--1900x1000.webp?v=1654887284457",
-        "https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/maxresdefault.jpg?v=1654887392324",
-      ];
+      let bgChanged = false;
+      function executeBg() {
+        if (!bgChanged) {
+          bgChanged = true;
+          document.getElementById("home-top-half").style.backgroundImage =
+            "url('https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/a5037b.jpg?v=1654817959179')";
+        }
+      }
       var index = 0;
-      $top = $("#home-top-half");
-      setInterval(function () {
+      function cycle() {
+        const images = [
+          "https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/a5037b.jpg?v=1654817959179",
+          "https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/GMT5POQU7BB4ZMUHAGCVKAJ2UI.JPG?v=1654818985863",
+          "https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/Tashme-shacks-NNM-1994-69-4-27--1900x1000.webp?v=1654887284457",
+          "https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/maxresdefault.jpg?v=1654887392324",
+          "https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/a5037b.jpg?v=1654817959179",
+          "https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/GMT5POQU7BB4ZMUHAGCVKAJ2UI.JPG?v=1654818985863",
+          "https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/Tashme-shacks-NNM-1994-69-4-27--1900x1000.webp?v=1654887284457",
+          "https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/maxresdefault.jpg?v=1654887392324",
+        ];
+        $top = $("#home-top-half");
+        if (index == images.length - 1) {
+          executeBg();
+          return;
+        }
         $top.animate({ opacity: 0.2 }, 500, function () {
           $top.css("background-image", "url(" + images[++index] + ")");
           $top.css("background-size", "cover");
-          $top.animate({ opacity: 1 }, 500, function () {
-            if (index == images.length) {
-              index = -1;
-            }
-          });
+          $top.animate({ opacity: 1 }, 500, function () {});
         });
-      }, 3000);
+        setTimeout(cycle, 3000);
+      }
+      cycle();
     </script>
   </body>
 </html>
