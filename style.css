@@ -323,20 +323,24 @@ a {
   text-align: center;
   margin-top: 12%;
   width: 100%;
-  height: 130%;
+  height: 170%;
 }
 #conscription-about {
+  overflow: hidden;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  color: white;
+  font-size: 1.3em;
   width: 45%;
   height: 60%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-#conscription-connection {
-  /* margin-top: 2%; */
-  width: 45%;
-  height: 60%;
-  background-color: rgba(0, 0, 0, 0.7);
+#conscription-about p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #conscription-visual {
+  overflow: hidden;
   margin-left: 1%;
   width: 45%;
   height: 60%;
@@ -344,4 +348,27 @@ a {
 }
 #conscription-about, #conscription-visual {
   display: inline-block;
+}
+.about-sub {
+  font-weight: bold;
+}
+
+/* internment page */
+#internment-body {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/japanese-internment.webp?v=1655054550568");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Avro page */
+#arrow-body {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/GMT5POQU7BB4ZMUHAGCVKAJ2UI.JPG?v=1654818985863");
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* flq page */
+#flq-body {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/flq.jpg?v=1655055016368");
+  background-size: cover;
+  background-attachment: fixed;
 }
