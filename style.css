@@ -320,7 +320,28 @@ a {
   text-decoration: none;
 }
 #conscription-bottom-half {
+  text-align: center;
   margin-top: 12%;
   width: 100%;
-  height: 100%;
+  height: 130%;
+}
+#conscription-about {
+  width: 45%;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#conscription-connection {
+  /* margin-top: 2%; */
+  width: 45%;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#conscription-visual {
+  margin-left: 1%;
+  width: 45%;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#conscription-about, #conscription-visual {
+  display: inline-block;
 }
