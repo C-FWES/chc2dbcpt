@@ -372,3 +372,18 @@ a {
   background-size: cover;
   background-attachment: fixed;
 }
+
+.important-info {
+  color: rgb(125, 125, 255);
+}
+
+.important-info .tooltip-text {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  padding: 0.2%;
+  position: absolute;
+}
+.important-info:hover .tooltip-text {
+  visibility: visible;
+}
