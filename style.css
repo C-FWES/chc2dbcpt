@@ -346,6 +346,11 @@ a {
   height: 90%;
   background-color: rgba(0, 0, 0, 0.7);
 }
+#conscription-visual p {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  color: white;
+  font-size: 1.3em;
+}
 #conscription-about, #conscription-visual {
   display: inline-block;
 }
@@ -398,4 +403,10 @@ a {
 }
 .important-info:hover .tooltip-text {
   visibility: visible;
+}
+iframe {
+  margin-top: 3%;
+}
+#conscription-sign {
+  margin-top: 3%;
 }
