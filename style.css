@@ -331,7 +331,7 @@ a {
   color: white;
   font-size: 1.3em;
   width: 45%;
-  height: 60%;
+  height: 90%;
   background-color: rgba(0, 0, 0, 0.7);
 }
 #conscription-about p {
@@ -343,7 +343,7 @@ a {
   overflow: hidden;
   margin-left: 1%;
   width: 45%;
-  height: 60%;
+  height: 90%;
   background-color: rgba(0, 0, 0, 0.7);
 }
 #conscription-about, #conscription-visual {
