@@ -222,7 +222,7 @@ ul {
   color: white;
   text-align: right;
   padding-right: 2%;
-  margin-top: 2.5%;
+  margin-top: 1.5%;
 }
 
 /*Conscription Page*/
@@ -331,7 +331,7 @@ a {
   color: white;
   font-size: 1.3em;
   width: 45%;
-  height: 60%;
+  height: 90%;
   background-color: rgba(0, 0, 0, 0.7);
 }
 #conscription-about p {
@@ -343,7 +343,7 @@ a {
   overflow: hidden;
   margin-left: 1%;
   width: 45%;
-  height: 60%;
+  height: 90%;
   background-color: rgba(0, 0, 0, 0.7);
 }
 #conscription-about, #conscription-visual {
@@ -351,6 +351,18 @@ a {
 }
 .about-sub {
   font-weight: bold;
+}
+
+@media (min-width: 1920px) {
+  #conscription-about {
+    height: 60%;
+  }
+  #conscription-visual {
+    height: 60%;
+  }
+  #copyright {
+     margin-top: 2.5%;
+  }
 }
 
 /* internment page */
