@@ -410,3 +410,8 @@ iframe {
 #conscription-sign {
   margin-top: 3%;
 }
+#wide {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
