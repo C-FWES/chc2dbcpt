@@ -415,3 +415,24 @@ iframe {
   margin-left: auto;
   margin-right: auto;
 }
+.alt-header {
+  text-align: center;
+  color: white;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+#reflection {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#reflection-container {
+  height: 100%;
+}
+#reflection-body {
+  background-size: cover;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("https://cdn.glitch.global/b988ba25-8dc7-4778-9e8b-f1fa0eacd098/121219.jpeg?v=1655475382669");
+}
